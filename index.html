@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="enterData">
+        <h1 class="header">Expense Tracker</h1>
+        <span class="inputWrapper">
+            <label class="inputName">Name:</label>
+            <input type="text" class="input" id="nameInput">
+            </span>
+        <span class="inputWrapper">
+            <label class="inputName">Date:</label>
+            <input type="date" class="input" id="dateInput">
+            </span>
+        <span class="inputWrapper">
+            <label class="inputName">Amount:</label>
+            <input type="number" class="input" id="amountInput">
+            </span>
+        <span class="clearData">
+            <button class="btnAdd" id="add">Add Expense</button>
+            <button class="btnAdd" id="clear">Clear Data</button>
+        </span>
+    </div>
+    <div class="enteredData" id="tableWrapper">
+        <table class="table" id="table">
+            <thead>
+                <tr class="headersRows">
+                    <th class="headersNames">Name</th>
+                    <th class="headersDate">Date</th>
+                    <th class="headersAmount">Amount in $</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr class="dataRows">
+                    <td>Laptop</td>
+                    <td>16.10.2020</td>
+                    <td>1099$</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
